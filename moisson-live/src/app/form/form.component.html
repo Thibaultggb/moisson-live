@@ -1,0 +1,179 @@
+<div class="row">
+    <div class="col-lg-12">
+<div class="card text-center">
+    <div class="card-header bg-dark text-white">
+      Activité
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">PARTAGEZ VOS RESULTATS</h5>
+      <p class="card-text"> Saisissez les données en rapport avec votre activité :</p>
+      <form (ngSubmit)="partageResults() &&myForm.valid" #myForm="ngForm" class="needs-validation" novalidate>
+
+
+          <label for="humidite">Taux d'humidité : </label>
+          <!--[(ngModel)]="Humidite"attenteméthodepost-->
+          <input name="humidite" type="number" [(ngModel)]="Humidite" required>
+
+      <div *ngIf="Humidite.errors">
+        <span *ngIf="Humidite.errors.required">Le champ est requis</span>
+      </div>
+
+      <br />
+      <div>
+        <label for="culture">Culture : </label>
+        <input type="text" name="culture" [(ngModel)]="Culture" required>
+      </div>
+      <div *ngIf="Culture.errors">
+        <span *ngIf="Culture.errors.required">Le champ est requis</span>
+      </div><br />
+      <div>
+        <label for="variete">Variété : </label>
+        <input type="text" name="variete" [(ngModel)]="Variete">
+      </div>
+      <div>
+        <label for="rendement">Rendement (quintaux) : </label>
+        <input name="rendement" type="number" [(ngModel)]="Model.Rendement" required>
+      </div>
+      <div *ngIf="Rendement.errors">
+        <span *ngIf="Rendement.errors.required">Le champ est requis</span>
+      </div>
+      <br />
+      <div>
+        <label for="humidite">Humidite : </label>
+        <input name="humidite" type="number" [(ngModel)]="Humidite" required>
+      </div>
+      <div *ngIf="Humidite.errors">
+        <span *ngIf="Humidite.errors.required">Le champ est requis</span>
+      </div>
+      <br />
+      <div>
+        <label for="irrigation">Irrigation : </label>
+        <input name="irrigation" type="number" [(ngModel)]="Irrigation" required>
+      </div>
+      <div *ngIf="Irrigation.errors">
+        <span *ngIf="Irrigation.errors.required">Le champ est requis</span>
+      </div>
+      <br />
+      <div>
+        <label for="resultat">Resultat (% moyenne des 5 dernières annees) : </label>
+        <input name="resultat" type="number" [(ngModel)]="Resultat" required>
+      </div>
+      <div *ngIf="Resultat.errors">
+        <span *ngIf="Resultat.errors.required">Le champ est requis</span>
+      </div>
+      <br />
+      <div>
+        <label for="azote">Quantité d'azote (en unités) : </label>
+        <input name="azote" type="number" [(ngModel)]="Azote" required>
+      </div>
+      <div *ngIf="Azote.errors">
+        <span *ngIf="Azote.errors.required">Le champ est requis</span>
+      </div>
+      <br />
+      <div>
+        <label for="forme">Sous quelle forme ? (Solution azotée, Ammonitrate, Urée 46...) : </label>
+        <input name="forme" type="text" [(ngModel)]="Forme" required>
+      </div>
+      <div *ngIf="Forme.errors">
+        <span *ngIf="Forme.errors.required">Le champ est requis</span>
+      </div>
+      <br />
+      <div>
+        <label for="technique">Technique culturale : </label>
+        <input name="technique" type="number" [(ngModel)]="Technique" required>
+      </div>
+      <div *ngIf="Technique.errors">
+        <span *ngIf="Technique.errors.required">Le champ est requis</span>
+      </div>
+        </form>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+    <div class="col-sm-4">
+      <div class="card">
+          <div class="card-header bg-dark text-white">
+              Objectifs
+            </div>
+        <div class="card-body">
+          <h5 class="card-title">Quel est votre prix objectif de vente:</h5>
+          <form>
+              <div>
+                <label for="prixobjectifmais">en Maïs : </label>
+                <input name="prixobjectifmais" type="number" [(ngModel)]="Prixobjectifmais" required>
+              </div>
+              <div>
+                  <label for="prixobjectiftournesol">en Tournesol : </label>
+                  <input name="prixobjectiftournesol" type="number" [(ngModel)]="Prixobjectiftournesol" required>
+                </div>
+              <div *ngIf="Prixobjectifmais.errors">
+                <span *ngIf="Prixobjectifmais.errors.required">Le champ est requis</span>
+              </div>
+            </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section col-sm-4">
+      <div class="card">
+          <div class="card-header bg-dark text-white">
+              Commentaires
+            </div>
+        <div class="card-body">
+          <h5 class="card-title">Laissez ici un commentaire ou des infos supplémentaires :</h5>
+          <form>
+              <div>
+                <input name="commentaires" type="text" [(ngModel)]="Commentaires" required>
+              </div>
+              <div *ngIf="Commentaires.errors">
+                <span *ngIf="Commentaires.errors.required">Le champ est requis</span>
+              </div>
+            </form>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-header bg-dark text-white">
+                Coordonnées
+              </div>
+          <div class="card-body">
+
+            <h5 class="card-title">Merci de mentionner vos coordonnées :</h5>
+            <form>
+                <div>
+                  <label for="email">Adresse mail : </label>
+                  <input type="email" name="email" [(ngModel)]="Email" required>
+                </div>
+                <div *ngIf="Email.errors">
+                  <span *ngIf="Email.errors.required">Le champ est requis</span>
+                </div><br />
+                <div>
+                  <label for="telephone">Telephone : </label>
+                  <input name="telephone" type="number" [(ngModel)]="Telephone" required>
+                </div>
+                <div *ngIf="Telephone.errors">
+                  <span *ngIf="Telephone.errors.required">Le champ est requis</span>
+                </div>
+              </form>
+
+          </div>
+
+        </div>
+      </div>
+  </div>
+
+  <div class="col-lg-12">
+  <form>
+      <button class="btn btn-primary" type="submit">Envoyer les donnees</button>
+      <button type="reset">TOUT EFFACER</button>
+      </form>
+  </div>
+
