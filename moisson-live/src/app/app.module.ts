@@ -20,36 +20,18 @@ import { FormComponent } from './form/form.component';
   declarations: [
     AppComponent,
 
-    FooterComponent,
-
-    MapComponent,
     //ComparatorComponent,
    // ChartsModule,
-    FormComponent,
-
-
     FooterComponent,
-
     MapComponent,
-    HeaderComponent,
-
-    PictureComponent,
     FormComponent,
-
+    HeaderComponent,
     PictureComponent,
-    MapComponent,
-
-
-    MapComponent
-
-
-
+    
   ],
   imports: [
     BrowserModule,
-
     FormsModule,
-
     HttpClientModule
 
   ],
