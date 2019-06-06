@@ -5,11 +5,8 @@ import { AppComponent } from './app.component';
 
 import { FormsModule } from '@angular/forms';
 
-import { FooterComponent } from './footer/footer.component';
-import { MapComponent } from './map/map.component';
 //import { ComparatorComponent } from './comparator/comparator.component';
 
-import { FormComponent } from './form/form.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
@@ -28,7 +25,7 @@ import { FormComponent } from './form/form.component';
     MapComponent,
     //ComparatorComponent,
    // ChartsModule,
-    FormComponent
+    FormComponent,
 
 
     FooterComponent,
@@ -37,10 +34,10 @@ import { FormComponent } from './form/form.component';
     HeaderComponent,
 
     PictureComponent,
-    FormComponent
+    FormComponent,
 
-    PictureComponent
-    MapComponent
+    PictureComponent,
+    MapComponent,
 
 
     MapComponent
@@ -51,7 +48,7 @@ import { FormComponent } from './form/form.component';
   imports: [
     BrowserModule,
 
-    FormsModule
+    FormsModule,
 
     HttpClientModule
 
