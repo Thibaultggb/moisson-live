@@ -24,6 +24,7 @@ import { FormComponent } from './form/form.component';
     AppComponent,
 
     FooterComponent,
+
     MapComponent,
     //ComparatorComponent,
    // ChartsModule,
