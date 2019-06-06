@@ -1,0 +1,41 @@
+.link {
+    margin-bottom : 5%;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.site {
+    margin-left: 10%;
+}
+
+p {
+    text-align: center;
+}
+
+
+.para {
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.contact {
+    margin-top: 0%; 
+}
+
+footer{
+    padding: -10%;
+}
+
+.container {
+    margin-bottom: 5%;
+}
+
+a {
+    color: rgb(79, 190, 235);
+}
+
+button {
+    width: 10%;
+    height: 40%;
+    border-radius: 3%;
+}
