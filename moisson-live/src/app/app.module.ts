@@ -6,6 +6,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { HeaderComponent } from './header/header.component';
+import { PictureComponent } from './picture/picture.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,10 @@ import { HeaderComponent } from './header/header.component';
     FooterComponent,
 
     MapComponent,
-    HeaderComponent
+    HeaderComponent,
+    PictureComponent
+    MapComponent
+
 
     MapComponent
 
