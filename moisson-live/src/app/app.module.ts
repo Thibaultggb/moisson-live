@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { HeaderComponent } from './header/header.component';
 import { PictureComponent } from './picture/picture.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { PictureComponent } from './picture/picture.component';
     FooterComponent,
     MapComponent,
     HeaderComponent,
-    PictureComponent
+    PictureComponent,
+    FormComponent
 
   ],
   imports: [
