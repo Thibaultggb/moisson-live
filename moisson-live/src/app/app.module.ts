@@ -16,6 +16,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MapComponent } from './map/map.component';
 import { HeaderComponent } from './header/header.component';
 import { PictureComponent } from './picture/picture.component';
+import { FormComponent } from './form/form.component';
 
 
 @NgModule({
@@ -33,11 +34,16 @@ import { PictureComponent } from './picture/picture.component';
 
     MapComponent,
     HeaderComponent,
+
+    PictureComponent,
+    FormComponent
+
     PictureComponent
     MapComponent
 
 
     MapComponent
+
 
 
   ],
