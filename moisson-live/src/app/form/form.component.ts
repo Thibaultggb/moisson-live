@@ -7,9 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormComponent implements OnInit {
 
+
+public Humidite:string;
+public Culture:string;
+public Variété:string;
+public Rendement:string;
+public Résultat:string;
+public Irrigation:string;
+public Azote:string;
+
+
   constructor() { }
 
   ngOnInit() {
   }
+
+
+
+partageResults(){
+  console.log("Résultat");
+}
 
 }
