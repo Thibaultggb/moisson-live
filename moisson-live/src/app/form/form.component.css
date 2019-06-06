@@ -1,0 +1,15 @@
+.card :hover{
+  color: rgb(92, 143, 35);
+  transition: 0.3s;
+
+}
+.card-header{
+  scale: 1.1;
+  transition: 0.3s;
+}
+.ng-changed{
+  border-left: blue;
+}
+.ng-invalid{
+  border-left: red;
+}
