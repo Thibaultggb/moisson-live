@@ -1,0 +1,90 @@
+<h1 class="ecriture">PARTAGEZ VOS RÉSULTATS</h1>
+<h3 class="ecriture">Participez à la carte de la moisson en vous inscrivant ci-dessous.</h3>
+<br>
+<h6>*Obligatoire</h6>
+<br>
+
+<form action="destination" class="troisblocs">
+  <div>
+    <p class="activite">ACTIVITE</p>
+    <br>
+    <div>
+      <p>
+        <label for="variété">Variété<br></label>
+        <input type="variété" id="variété">
+      </p>
+      <p>
+        <label for="rendement">Rendement*<br></label>
+        <input type="rendement" id="rendement">
+      </p>
+      <p>
+        <label for="humidité">Humidité*<br></label>
+        <input type="humidité" id="humidité">
+      </p>
+      <br>
+    </div>
+  </div>
+</form>
+
+<br>
+<br>
+<form action="destination" class="troisblocs">
+  <div>
+    <p class="ecriture col-lg-9">Vos coordonnées</p>
+    <p>
+      <label for="code">Code postal*<br></label>
+      <input type="text" id="code" autofocus>
+    </p>
+    <p>
+      <label for="commune">Commune*</label>
+      <input type="commune" id="commune">
+    </p>
+    <p>
+      <label for="email">Email* </label>
+      <input type="email" id="email">
+    </p>
+    <p>
+      <label for="tel">Téléphone </label>
+      <input type="tel" id="tel">
+    </p>
+  </div>
+  <div>
+    <p class="ecriture">Un commentaire ?</p>
+    <textarea name="" id="" cols="10" rows="5">Ecrivez ici</textarea>
+  </div>
+  <div>
+    <p class="question" for="pet-select" class="ecriture">Quel est votre prix objectif de vente en maïs ?</p>
+    <select id="pet-select">
+      <option value="">Selectionner</option>
+      <option value="150">150</option>
+      <option value="160">160</option>
+      <option value="170">170</option>
+      <option value="180">180</option>
+      <option value="190">190</option>
+      <option value="200">200</option>
+      <option value="210">210</option>
+    </select>
+    <br>
+    <br>
+    <p class="question" for="pet-select" class="ecriture">Quel est votre prix objectif de vente en Tournesol ?</p>
+    <select id="pet-select">
+      <option value="">Selectionner</option>
+      <option value="270">270</option>
+      <option value="280">280</option>
+      <option value="290">290</option>
+      <option value="300">300</option>
+      <option value="310">310</option>
+      <option value="320">320</option>
+      <option value="330">330</option>
+      <option value="340">340</option>
+      <option value="350">350</option>
+    </select>
+    <br>
+  </div>
+</form>
+<br>
+<p>
+  <button type="button" class="btn envoyer btn-primary btn-lg">ENVOYER</button>
+</p>
+
+<router-outlet></router-outlet>
