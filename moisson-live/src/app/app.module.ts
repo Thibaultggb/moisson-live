@@ -28,26 +28,19 @@ const appRoutes: Routes = [
     AppComponent,
     FooterComponent,
     MapComponent,
-    //ComparatorComponent,
-    // ChartsModule,
-    FormComponent,
-    FooterComponent,
-    MapComponent,
     HeaderComponent,
     PictureComponent,
-
-
-
+    FormComponent
   ],
+  
   imports: [
     BrowserModule,
-
     FormsModule,
-
     HttpClientModule,
 
     RouterModule.forRoot(appRoutes)
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
