@@ -32,6 +32,13 @@ a {
 
 button {
     width: 10%;
-    height: 40%;
+    height: 70%;
     border-radius: 3%;
+    padding-bottom: 5%;
+}
+
+.link-comp {
+    color: blue;
+    background-color: white; 
+    height: 40%;
 }
